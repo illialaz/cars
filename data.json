@@ -1,0 +1,97 @@
+[ {
+  "type" : "sportcar",
+  "country" : "Italy",
+  "company" : "Lamborghini",
+  "model" : "Gallardo",
+  "weight" : 1400,
+  "maxSpeed" : 350,
+  "numWheels" : 4,
+  "cost" : 200000,
+  "statistics" : {
+    "ageUnder18" : 30,
+    "ageBetween18And30" : 2500,
+    "ageBetween30And50" : 4200,
+    "ageAfter50" : 400
+  },
+  "quarterMileTime" : 1156
+}, {
+  "type" : "sportcar",
+  "country" : "Italy",
+  "company" : "Ferrari",
+  "model" : "458",
+  "weight" : 1600,
+  "maxSpeed" : 370,
+  "numWheels" : 4,
+  "cost" : 250000,
+  "statistics" : {
+    "ageUnder18" : 5,
+    "ageBetween18And30" : 3000,
+    "ageBetween30And50" : 5000,
+    "ageAfter50" : 2000
+  },
+  "quarterMileTime" : 1045
+}, {
+  "type" : "jeep",
+  "country" : "Japan",
+  "company" : "Toyota",
+  "model" : "Land Cruiser",
+  "weight" : 2500,
+  "maxSpeed" : 240,
+  "numWheels" : 4,
+  "cost" : 120000,
+  "statistics" : {
+    "ageUnder18" : 5,
+    "ageBetween18And30" : 10000,
+    "ageBetween30And50" : 60000,
+    "ageAfter50" : 40000
+  },
+  "clearance" : 40
+}, {
+  "type" : "jeep",
+  "country" : "USA",
+  "company" : "Jeep",
+  "model" : "Wrangler",
+  "weight" : 2300,
+  "maxSpeed" : 250,
+  "numWheels" : 4,
+  "cost" : 80000,
+  "statistics" : {
+    "ageUnder18" : 7,
+    "ageBetween18And30" : 10000,
+    "ageBetween30And50" : 40000,
+    "ageAfter50" : 20000
+  },
+  "clearance" : 40
+}, {
+  "type" : "minivan",
+  "country" : "Germany",
+  "company" : "Volkswagen",
+  "model" : "Multivan",
+  "weight" : 2200,
+  "maxSpeed" : 250,
+  "numWheels" : 4,
+  "cost" : 100000,
+  "statistics" : {
+    "ageUnder18" : 5,
+    "ageBetween18And30" : 10000,
+    "ageBetween30And50" : 70000,
+    "ageAfter50" : 30000
+  },
+  "seats" : 8
+}, {
+  "type" : "minivan",
+  "country" : "France",
+  "company" : "Peugeot",
+  "model" : "607",
+  "weight" : 2300,
+  "maxSpeed" : 230,
+  "numWheels" : 4,
+  "cost" : 70000,
+  "statistics" : {
+    "ageUnder18" : 0,
+    "ageBetween18And30" : 1500,
+    "ageBetween30And50" : 10000,
+    "ageAfter50" : 5000
+  },
+  "seats" : 7
+} ]

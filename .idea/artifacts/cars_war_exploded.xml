@@ -1,0 +1,43 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="cars:war exploded">
+    <output-path>$PROJECT_DIR$/target/spring2</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>cars</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="cars" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.5" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.11.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.11.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.11.1" />
+          <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.2" />
+          <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:1.2.1" />
+          <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:4.2.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.woodstox:woodstox-core:6.2.1" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/spring2/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="cars/web/Web" />
+    </root>
+  </artifact>
+</component>

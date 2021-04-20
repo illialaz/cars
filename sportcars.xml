@@ -1,0 +1,51 @@
+<?xml version = "1.0"?>
+<class>
+    <vehicle type="sportcar">
+        <country>Italy</country>
+        <company>Lamborghini</company>
+        <model>Gallardo</model>
+        <maxSpeed>350</maxSpeed>
+        <cost>200000</cost>
+        <numWheels>4</numWheels>
+        <quarterMileTime>1156</quarterMileTime>
+        <weight>1400</weight>
+        <statistics>
+            <ageUnder18>30</ageUnder18>
+            <ageBetween18And30>2500</ageBetween18And30>
+            <ageBetween30And50>4200</ageBetween30And50>
+            <ageAfter50>400</ageAfter50>
+        </statistics>
+    </vehicle>
+    <vehicle type="sportcar">
+        <country>USA</country>
+        <company>Ford</company>
+        <model>GT</model>
+        <maxSpeed>350</maxSpeed>
+        <cost>170000</cost>
+        <numWheels>4</numWheels>
+        <quarterMileTime>1047</quarterMileTime>
+        <weight>1600</weight>
+        <statistics>
+            <ageUnder18>2</ageUnder18>
+            <ageBetween18And30>50000</ageBetween18And30>
+            <ageBetween30And50>20000</ageBetween30And50>
+            <ageAfter50>1000</ageAfter50>
+        </statistics>
+    </vehicle>
+    <vehicle type="sportcar">
+        <country>Italy</country>
+        <company>Ferrari</company>
+        <model>458</model>
+        <maxSpeed>370</maxSpeed>
+        <cost>250000</cost>
+        <numWheels>4</numWheels>
+        <quarterMileTime>1055</quarterMileTime>
+        <weight>1600</weight>
+        <statistics>
+            <ageUnder18>5</ageUnder18>
+            <ageBetween18And30>3100</ageBetween18And30>
+            <ageBetween30And50>5000</ageBetween30And50>
+            <ageAfter50>1000</ageAfter50>
+        </statistics>
+    </vehicle>
+</class>

@@ -1,0 +1,115 @@
+<?xml version = "1.0"?>
+<class>
+    <vehicle type="sportcar">
+        <country>Italy</country>
+        <company>Lamborghini</company>
+        <model>Gallardo</model>
+        <maxSpeed>350</maxSpeed>
+        <cost>200000</cost>
+        <numWheels>4</numWheels>
+        <quarterMileTime>1156</quarterMileTime>
+        <weight>1400</weight>
+        <statistics>
+            <ageUnder18>30</ageUnder18>
+            <ageBetween18And30>2500</ageBetween18And30>
+            <ageBetween30And50>4200</ageBetween30And50>
+            <ageAfter50>400</ageAfter50>
+        </statistics>
+    </vehicle>
+    <vehicle type="jeep">
+        <country>USA</country>
+        <company>Jeep</company>
+        <model>Wrangler</model>
+        <maxSpeed>250</maxSpeed>
+        <cost>80000</cost>
+        <numWheels>4</numWheels>
+        <clearance>40</clearance>
+        <weight>1700</weight>
+        <statistics>
+            <ageUnder18>1000</ageUnder18>
+            <ageBetween18And30>5000</ageBetween18And30>
+            <ageBetween30And50>7000</ageBetween30And50>
+            <ageAfter50>3000</ageAfter50>
+        </statistics>
+    </vehicle>
+    <vehicle type="jeep">
+        <country>Japan</country>
+        <company>Toyota</company>
+        <model>Land Cruiser</model>
+        <maxSpeed>220</maxSpeed>
+        <cost>100000</cost>
+        <numWheels>4</numWheels>
+        <clearance>40</clearance>
+        <weight>2200</weight>
+        <statistics>
+            <ageUnder18>0</ageUnder18>
+            <ageBetween18And30>50000</ageBetween18And30>
+            <ageBetween30And50>120000</ageBetween30And50>
+            <ageAfter50>10000</ageAfter50>
+        </statistics>
+    </vehicle>
+    <vehicle type="minivan">
+        <country>Germany</country>
+        <company>Volksvagen</company>
+        <model>Multivan</model>
+        <maxSpeed>250</maxSpeed>
+        <cost>120000</cost>
+        <numWheels>4</numWheels>
+        <seats>8</seats>
+        <weight>2500</weight>
+        <statistics>
+            <ageUnder18>5</ageUnder18>
+            <ageBetween18And30>5000</ageBetween18And30>
+            <ageBetween30And50>100000</ageBetween30And50>
+            <ageAfter50>30000</ageAfter50>
+        </statistics>
+    </vehicle>
+    <vehicle type="sportcar">
+        <country>USA</country>
+        <company>Ford</company>
+        <model>GT</model>
+        <maxSpeed>350</maxSpeed>
+        <cost>170000</cost>
+        <numWheels>4</numWheels>
+        <quarterMileTime>1047</quarterMileTime>
+        <weight>1600</weight>
+        <statistics>
+            <ageUnder18>2</ageUnder18>
+            <ageBetween18And30>50000</ageBetween18And30>
+            <ageBetween30And50>20000</ageBetween30And50>
+            <ageAfter50>1000</ageAfter50>
+        </statistics>
+    </vehicle>
+    <vehicle type="minivan">
+        <country>France</country>
+        <company>Peugeot</company>
+        <model>607</model>
+        <maxSpeed>230</maxSpeed>
+        <cost>50000</cost>
+        <numWheels>4</numWheels>
+        <seats>7</seats>
+        <weight>2100</weight>
+        <statistics>
+            <ageUnder18>0</ageUnder18>
+            <ageBetween18And30>1000</ageBetween18And30>
+            <ageBetween30And50>53000</ageBetween30And50>
+            <ageAfter50>5000</ageAfter50>
+        </statistics>
+    </vehicle>
+    <vehicle type="sportcar">
+        <country>Italy</country>
+        <company>Ferrari</company>
+        <model>458</model>
+        <maxSpeed>370</maxSpeed>
+        <cost>250000</cost>
+        <numWheels>4</numWheels>
+        <quarterMileTime>1055</quarterMileTime>
+        <weight>1600</weight>
+        <statistics>
+            <ageUnder18>5</ageUnder18>
+            <ageBetween18And30>3100</ageBetween18And30>
+            <ageBetween30And50>5000</ageBetween30And50>
+            <ageAfter50>1000</ageAfter50>
+        </statistics>
+    </vehicle>
+</class>

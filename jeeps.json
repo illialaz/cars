@@ -1,0 +1,33 @@
+[ {
+  "type" : "jeep",
+  "country" : "Japan",
+  "company" : "Toyota",
+  "model" : "Land Cruiser",
+  "weight" : 2500,
+  "maxSpeed" : 240,
+  "numWheels" : 4,
+  "cost" : 120000,
+  "statistics" : {
+    "ageUnder18" : 5,
+    "ageBetween18And30" : 10000,
+    "ageBetween30And50" : 60000,
+    "ageAfter50" : 40000
+  },
+  "clearance" : 40
+}, {
+  "type" : "jeep",
+  "country" : "USA",
+  "company" : "Jeep",
+  "model" : "Wrangler",
+  "weight" : 2300,
+  "maxSpeed" : 250,
+  "numWheels" : 4,
+  "cost" : 80000,
+  "statistics" : {
+    "ageUnder18" : 7,
+    "ageBetween18And30" : 10000,
+    "ageBetween30And50" : 40000,
+    "ageAfter50" : 20000
+  },
+  "clearance" : 40
+} ]

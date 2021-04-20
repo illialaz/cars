@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+}
+
+th {
+    background-color: coral;
+    height: 70%;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+
+tr:hover {background-color: gray;}

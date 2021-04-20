@@ -1,0 +1,33 @@
+[ {
+  "type" : "sportcar",
+  "country" : "Italy",
+  "company" : "Lamborghini",
+  "model" : "Gallardo",
+  "weight" : 1400,
+  "maxSpeed" : 350,
+  "numWheels" : 4,
+  "cost" : 200000,
+  "statistics" : {
+    "ageUnder18" : 30,
+    "ageBetween18And30" : 2500,
+    "ageBetween30And50" : 4200,
+    "ageAfter50" : 400
+  },
+  "quarterMileTime" : 1156
+}, {
+  "type" : "sportcar",
+  "country" : "Italy",
+  "company" : "Ferrari",
+  "model" : "458",
+  "weight" : 1600,
+  "maxSpeed" : 370,
+  "numWheels" : 4,
+  "cost" : 250000,
+  "statistics" : {
+    "ageUnder18" : 5,
+    "ageBetween18And30" : 3000,
+    "ageBetween30And50" : 5000,
+    "ageAfter50" : 2000
+  },
+  "quarterMileTime" : 1045
+} ]
