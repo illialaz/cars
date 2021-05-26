@@ -1,6 +1,5 @@
-<?xml version = "1.0"?>
-<class>
-    <vehicle type="sportcar">
+<ArrayList>
+    <item>
         <country>Italy</country>
         <company>Lamborghini</company>
         <model>Gallardo</model>
@@ -14,9 +13,11 @@
             <ageBetween18And30>2500</ageBetween18And30>
             <ageBetween30And50>4200</ageBetween30And50>
             <ageAfter50>400</ageAfter50>
+            <id>d81c8700-d2e2-4e83-97e6-27c1821eda4d</id>
         </statistics>
-    </vehicle>
-    <vehicle type="sportcar">
+        <id>d81c8700-d2e2-4e83-97e6-27c1821eda4d</id>
+    </item>
+    <item>
         <country>USA</country>
         <company>Ford</company>
         <model>GT</model>
@@ -30,9 +31,11 @@
             <ageBetween18And30>50000</ageBetween18And30>
             <ageBetween30And50>20000</ageBetween30And50>
             <ageAfter50>1000</ageAfter50>
+            <id>6ef3890d-c0a4-49bf-b0f7-2a5973cbca01</id>
         </statistics>
-    </vehicle>
-    <vehicle type="sportcar">
+        <id>6ef3890d-c0a4-49bf-b0f7-2a5973cbca01</id>
+    </item>
+    <item>
         <country>Italy</country>
         <company>Ferrari</company>
         <model>458</model>
@@ -46,6 +49,8 @@
             <ageBetween18And30>3100</ageBetween18And30>
             <ageBetween30And50>5000</ageBetween30And50>
             <ageAfter50>1000</ageAfter50>
+            <id>80daebe2-d110-40d2-8dcc-04478798f3b3</id>
         </statistics>
-    </vehicle>
-</class>
+        <id>80daebe2-d110-40d2-8dcc-04478798f3b3</id>
+    </item>
+</ArrayList>

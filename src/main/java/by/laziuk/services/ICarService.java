@@ -1,15 +1,22 @@
 package by.laziuk.services;
 
+import by.laziuk.cars.impl.Identifiable;
 import by.laziuk.cars.impl.Vehicle;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
-import java.util.Map;
+import java.util.Optional;
 
-public interface ICarService {
-    void add(Map<String, String> car);
+public interface ICarService<T extends Identifiable> {
+    String XML = "XML";
+    String CSV = "CSV";
+    String JSON = "JSON";
+    String SQL = "SQL";
+    String NoSQL = "NoSQL";
+
     void delete(String id);
-    void add(Vehicle car);
-    void patch(String id, Map<String, String> newCar);
-    List<? extends Vehicle> get(String sortParam);
-    Vehicle getOne(String id);
+    void add(T car);
+    void patch(T car);
+    List<T> get(@Nullable String sortParam);
+    Optional<T> getOne(String id);
 }

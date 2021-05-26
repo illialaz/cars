@@ -1,14 +1,19 @@
 package by.laziuk.cars.impl;
 
-
 import by.laziuk.cars.annotations.construct;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.Comparator;
 import java.util.Map;
 
+@Entity
+@dev.morphia.annotations.Entity("minivans")
+@Table(name = "minivans")
 public class Minivan extends Vehicle implements Comparable<Minivan> {
 
-    final static private String SEATS = "seats";
+    final static public String SEATS = "seats";
 
     private int seats;
 
@@ -36,10 +41,8 @@ public class Minivan extends Vehicle implements Comparable<Minivan> {
                    int maxSpeed,
                    int cost,
                    int seats,
-                   String id,
-                   String type,
                    Statistics statistics) {
-        super(country, company, model, weight, numWheels, maxSpeed, cost, id, type, statistics);
+        super(country, company, model, weight, numWheels, maxSpeed, cost, statistics);
         this.seats = seats;
     }
 
@@ -51,9 +54,7 @@ public class Minivan extends Vehicle implements Comparable<Minivan> {
         };
     }
 
-    @Override
-    public void setType(String type) { this.type = "minivan"; }
-
+    @Column(name = "seats")
     public int getSeats() {
         return seats;
     }

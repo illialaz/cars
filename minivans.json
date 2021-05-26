@@ -1,73 +1,4 @@
 [ {
-  "type" : "minivan",
-  "country" : "France",
-  "company" : "Peugeot",
-  "model" : "607",
-  "weight" : 2300,
-  "maxSpeed" : 220,
-  "numWheels" : 0,
-  "cost" : 50000,
-  "statistics" : {
-    "ageUnder18" : 0,
-    "ageBetween18And30" : 1500,
-    "ageBetween30And50" : 10000,
-    "ageAfter50" : 5000
-  },
-  "id" : "b4008275-3667-41da-8966-719abab81b9b",
-  "seats" : 7
-}, {
-  "type" : "minivan",
-  "country" : "Germany",
-  "company" : "Volkswagen",
-  "model" : "Multivan",
-  "weight" : 2200,
-  "maxSpeed" : 250,
-  "numWheels" : 0,
-  "cost" : 80000,
-  "statistics" : {
-    "ageUnder18" : 5,
-    "ageBetween18And30" : 1000,
-    "ageBetween30And50" : 70000,
-    "ageAfter50" : 30000
-  },
-  "id" : "b9b08d47-c4f6-4e02-8dde-fa20851e5abc",
-  "seats" : 8
-}, {
-  "type" : "minivan",
-  "country" : "Japan",
-  "company" : "Nissan",
-  "model" : "Serena",
-  "weight" : 2450,
-  "maxSpeed" : 180,
-  "numWheels" : 0,
-  "cost" : 30000,
-  "statistics" : {
-    "ageUnder18" : 1000,
-    "ageBetween18And30" : 1000,
-    "ageBetween30And50" : 40000,
-    "ageAfter50" : 20000
-  },
-  "id" : "bc1828ab-c839-4bcf-965a-9143cb3778fc",
-  "seats" : 8
-}, {
-  "type" : "minivan",
-  "country" : "Japan",
-  "company" : "Toyota",
-  "model" : "Alphard",
-  "weight" : 2600,
-  "maxSpeed" : 200,
-  "numWheels" : 0,
-  "cost" : 80000,
-  "statistics" : {
-    "ageUnder18" : 5,
-    "ageBetween18And30" : 100,
-    "ageBetween30And50" : 3000,
-    "ageAfter50" : 10000
-  },
-  "id" : "99788a84-b2ae-474b-a190-2e1c56e737df",
-  "seats" : 7
-}, {
-  "type" : "minivan",
   "country" : "Germany",
   "company" : "Volkswagen",
   "model" : "Transporter",
@@ -79,8 +10,77 @@
     "ageUnder18" : 100,
     "ageBetween18And30" : 500,
     "ageBetween30And50" : 10000,
-    "ageAfter50" : 50000
+    "ageAfter50" : 50000,
+    "id" : "a6d14ee1-72a2-44ca-9a26-ad0f618d1e36"
   },
   "id" : "a6d14ee1-72a2-44ca-9a26-ad0f618d1e36",
+  "seats" : 8
+}, {
+  "country" : "Japan",
+  "company" : "Toyota",
+  "model" : "Alphard",
+  "weight" : 2600,
+  "maxSpeed" : 200,
+  "numWheels" : 0,
+  "cost" : 80000,
+  "statistics" : {
+    "ageUnder18" : 5,
+    "ageBetween18And30" : 100,
+    "ageBetween30And50" : 3000,
+    "ageAfter50" : 8000,
+    "id" : "99788a84-b2ae-474b-a190-2e1c56e737df"
+  },
+  "id" : "99788a84-b2ae-474b-a190-2e1c56e737df",
+  "seats" : 7
+}, {
+  "country" : "Germany",
+  "company" : "Volkswagen",
+  "model" : "Multivan",
+  "weight" : 2200,
+  "maxSpeed" : 250,
+  "numWheels" : 0,
+  "cost" : 80000,
+  "statistics" : {
+    "ageUnder18" : 5,
+    "ageBetween18And30" : 1000,
+    "ageBetween30And50" : 70000,
+    "ageAfter50" : 30000,
+    "id" : "b9b08d47-c4f6-4e02-8dde-fa20851e5abc"
+  },
+  "id" : "b9b08d47-c4f6-4e02-8dde-fa20851e5abc",
+  "seats" : 8
+}, {
+  "country" : "France",
+  "company" : "Peugeot",
+  "model" : "607",
+  "weight" : 2300,
+  "maxSpeed" : 220,
+  "numWheels" : 0,
+  "cost" : 50000,
+  "statistics" : {
+    "ageUnder18" : 0,
+    "ageBetween18And30" : 1500,
+    "ageBetween30And50" : 10000,
+    "ageAfter50" : 5000,
+    "id" : "b4008275-3667-41da-8966-719abab81b9b"
+  },
+  "id" : "b4008275-3667-41da-8966-719abab81b9b",
+  "seats" : 7
+}, {
+  "country" : "Japan",
+  "company" : "Nissan",
+  "model" : "Serena",
+  "weight" : 2450,
+  "maxSpeed" : 180,
+  "numWheels" : 0,
+  "cost" : 30000,
+  "statistics" : {
+    "ageUnder18" : 1000,
+    "ageBetween18And30" : 1000,
+    "ageBetween30And50" : 40000,
+    "ageAfter50" : 18000,
+    "id" : "94cdca25-7e62-493b-8143-ab2ef847823f"
+  },
+  "id" : "bc1828ab-c839-4bcf-965a-9143cb3778fc",
   "seats" : 8
 } ]

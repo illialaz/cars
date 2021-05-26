@@ -1,5 +1,7 @@
 package by.laziuk.dao;
 
+import by.laziuk.cars.impl.Identifiable;
+
 import java.io.File;
 import java.io.PrintWriter;
 import java.lang.reflect.Field;
@@ -10,12 +12,14 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class CsvDao<T> extends Dao<T> {
+public class CsvDao<T extends Identifiable> extends Dao<T> {
     private PrintWriter printWriter;
     private Scanner lineScanner;
+    private final String fileName;
 
-    public CsvDao(Class<T> type) {
+    public CsvDao(Class<T> type, String fileName) {
         super(type);
+        this.fileName = fileName;
     }
 
     private void writeNativeObject(Object object, Class<?> clazz) {
@@ -84,7 +88,7 @@ public class CsvDao<T> extends Dao<T> {
     }
 
     @Override
-    public void write(List<T> list, String fileName) {
+    public void write(List<T> list) {
         try {
             printWriter = new PrintWriter(new File(fileName));
             for (T object : list) {
@@ -96,7 +100,7 @@ public class CsvDao<T> extends Dao<T> {
     }
 
     @Override
-    public List<T> read(String fileName) {
+    public List<T> read() {
         List<T> list = new ArrayList<>();
         try {
             Scanner scanner = new Scanner(new File(fileName));
@@ -104,7 +108,9 @@ public class CsvDao<T> extends Dao<T> {
                 lineScanner = new Scanner(scanner.nextLine()).useDelimiter(";");
                 list.add((T) readObject(null));
             }
-        } catch(Exception e) { e.printStackTrace(); }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return list;
     }

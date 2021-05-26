@@ -1,6 +1,5 @@
-<?xml version = "1.0"?>
-<class>
-    <vehicle type="jeep">
+<ArrayList>
+    <item>
         <country>USA</country>
         <company>Jeep</company>
         <model>Wrangler</model>
@@ -14,9 +13,11 @@
             <ageBetween18And30>5000</ageBetween18And30>
             <ageBetween30And50>7000</ageBetween30And50>
             <ageAfter50>3000</ageAfter50>
+            <id>af3656cc-20af-40eb-bbfa-c2a297c09979</id>
         </statistics>
-    </vehicle>
-    <vehicle type="jeep">
+        <id>af3656cc-20af-40eb-bbfa-c2a297c09979</id>
+    </item>
+    <item>
         <country>Japan</country>
         <company>Toyota</company>
         <model>Land Cruiser</model>
@@ -30,6 +31,8 @@
             <ageBetween18And30>50000</ageBetween18And30>
             <ageBetween30And50>120000</ageBetween30And50>
             <ageAfter50>10000</ageAfter50>
+            <id>b2b8765a-2283-4b5c-ad19-5311f3cde043</id>
         </statistics>
-    </vehicle>
-</class>
+        <id>b2b8765a-2283-4b5c-ad19-5311f3cde043</id>
+    </item>
+</ArrayList>

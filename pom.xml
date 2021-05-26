@@ -21,6 +21,31 @@
 
   <dependencies>
     <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.2.20</version>
+    </dependency>
+    <dependency>
+      <groupId>dev.morphia.morphia</groupId>
+      <artifactId>core</artifactId>
+      <version>1.5.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <version>5.4.31.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.exposed</groupId>
+      <artifactId>exposed-java-time</artifactId>
+      <version>0.31.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.exposed</groupId>
+      <artifactId>exposed</artifactId>
+      <version>0.17.13</version>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>

@@ -2,13 +2,17 @@ package by.laziuk.cars.impl;
 
 import by.laziuk.cars.annotations.construct;
 import com.fasterxml.jackson.annotation.*;
+import dev.morphia.annotations.Property;
 
+import javax.persistence.*;
 import java.util.Comparator;
 import java.util.Map;
 import java.util.UUID;
 
 @JsonPropertyOrder({"type", "country", "company", "model", "weight", "maxSpeed", "numWheels", "cost", "statistics"})
-public class Vehicle {
+@MappedSuperclass
+@dev.morphia.annotations.Entity
+public class Vehicle implements IVehicle {
 
     public enum SortType {
         WEIGHT, NUMWHEELS, MAXSPEED, COST, MODEL, COMPANY, COUNTRY, STATISTICS, ID;
@@ -37,20 +41,22 @@ public class Vehicle {
     final private static String COMPANY = "company";
     final private static String COUNTRY = "country";
     final private static String STATISTICS = "statistics";
-    final private static String TYPE = "type";
     final private static String ID = "id";
 
-
     private int weight;
+    @Property("wheels")
     private int numWheels;
+    @Property("speed")
     private int maxSpeed;
+    @Property("price")
     private int cost;
-    private String id;
+    @dev.morphia.annotations.Id
+    protected String id;
     private String model;
     private String company;
     private String country;
+    @Embedded
     private Statistics statistics;
-    protected String type;
 
     public Vehicle() {
         this.country = "";
@@ -61,7 +67,6 @@ public class Vehicle {
         this.maxSpeed = 0;
         this.cost = 0;
         this.statistics = null;
-        this.type = "";
         this.id = "";
     }
 
@@ -74,9 +79,8 @@ public class Vehicle {
         this.numWheels = Integer.parseInt(data.get(NUMWHEELS));
         this.maxSpeed = Integer.parseInt(data.get(MAXSPEED));
         this.cost = Integer.parseInt(data.get(COST));
-        this.type = data.get(TYPE);
         this.statistics = new Statistics(data);
-        this.id = data.get(ID);
+        setId(data.get(ID));
     }
 
     public Vehicle(String country,
@@ -86,8 +90,6 @@ public class Vehicle {
                       int numWheels,
                       int maxSpeed,
                       int cost,
-                      String id,
-                      String type,
                       Statistics statistics) {
         this.country = country;
         this.company = company;
@@ -96,15 +98,15 @@ public class Vehicle {
         this.numWheels = numWheels;
         this.maxSpeed = maxSpeed;
         this.cost = cost;
-        this.id = id;
-        this.type = type;
+        setId("");
         this.statistics = statistics;
     }
 
     public Vehicle(Vehicle car) {
-        this(car.country, car.company, car.model, car.weight, car.numWheels, car.maxSpeed, car.cost, car.id, car.type, car.statistics);
+        this(car.country, car.company, car.model, car.weight, car.numWheels, car.maxSpeed, car.cost, car.statistics);
     }
 
+    @Column(name = "weight")
     public int getWeight() {
         return weight;
     }
@@ -113,13 +115,20 @@ public class Vehicle {
         this.weight = weight;
     }
 
-    public String getId() { return id; }
+    @Override
+    @Id
+    @Column(name = "id")
+    public String getId() {
+        return id;
+    }
 
+    @Override
     public void setId(String id) {
-        if(id.length() != 0) this.id = id;
+        if(id.length() == 36) this.id = id;
         else this.id = UUID.randomUUID().toString();
     }
 
+    @Column(name = "wheels")
     public int getNumWheels() {
         return numWheels;
     }
@@ -128,6 +137,7 @@ public class Vehicle {
         this.numWheels = numWheels;
     }
 
+    @Column(name = "maxSpeed")
     public int getMaxSpeed() {
         return maxSpeed;
     }
@@ -136,6 +146,7 @@ public class Vehicle {
         this.maxSpeed = maxSpeed;
     }
 
+    @Column(name = "price")
     public int getCost() {
         return cost;
     }
@@ -144,6 +155,7 @@ public class Vehicle {
         this.cost = cost;
     }
 
+    @Column(name = "model")
     public String getModel() {
         return model;
     }
@@ -152,6 +164,7 @@ public class Vehicle {
         this.model = model;
     }
 
+    @Column(name = "company")
     public String getCompany() {
         return company;
     }
@@ -160,6 +173,7 @@ public class Vehicle {
         this.company = company;
     }
 
+    @Column(name = "country")
     public String getCountry() {
         return country;
     }
@@ -168,10 +182,7 @@ public class Vehicle {
         this.country = country;
     }
 
-    public String getType() { return type; }
-
-    public void setType(String type) { this.type = "vehicle"; }
-
+    @Embedded
     public Statistics getStatistics() {
         return statistics;
     }

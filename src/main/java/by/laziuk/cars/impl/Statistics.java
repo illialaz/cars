@@ -1,19 +1,24 @@
 package by.laziuk.cars.impl;
 
+import javax.persistence.*;
 import java.util.Comparator;
 import java.util.Map;
 
+@Embeddable
 public class Statistics implements Comparable<Statistics> {
 
-    final private static String AGEUNDER18 = "ageUnder18";
-    final private static String AGEBETWEEN18AND30 = "ageBetween18And30";
-    final private static String AGEBETWEEN30AND50 = "ageBetween30And50";
-    final private static String AGEAFTER50 = "ageAfter50";
+    final public static String AGEUNDER18 = "ageUnder18";
+    final public static String AGEBETWEEN18AND30 = "ageBetween18And30";
+    final public static String AGEBETWEEN30AND50 = "ageBetween30And50";
+    final public static String AGEAFTER50 = "ageAfter50";
 
-
+    @Column
     private int ageUnder18;
+    @Column
     private int ageBetween18And30;
+    @Column
     private int ageBetween30And50;
+    @Column
     private int ageAfter50;
 
     public Statistics() {

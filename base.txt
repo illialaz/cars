@@ -1,0 +1,70 @@
+CREATE TABLE statistics (
+  id VARCHAR(40) PRIMARY KEY,
+  under18 INT NOT NULL,
+  _18to30 INT NOT NULL,
+  _30to50 INT NOT NULL,
+  after50 INT NOT NULL
+);
+
+CREATE TABLE minivans (
+  id VARCHAR(40) PRIMARY KEY,
+  weight INT NOT NULL,
+  wheels INT NOT NULL,
+  maxSpeed INT NOT NULL,
+  price INT NOT NULL,
+  model VARCHAR(30) NOT NULL,
+  company VARCHAR(30) NOT NULL,
+  country VARCHAR(30) NOT NULL,
+  ageUnder18 INT NOT NULL,
+  ageBetween18And30 INT NOT NULL,
+  ageBetween30And50 INT NOT NULL,
+  ageAfter50 INT NOT NULL,
+  seats INT NOT NULL
+);
+
+CREATE TABLE jeeps (
+  id VARCHAR(40) PRIMARY KEY,
+  weight INT NOT NULL,
+  wheels INT NOT NULL,
+  maxSpeed INT NOT NULL,
+  price INT NOT NULL,
+  model VARCHAR(30) NOT NULL,
+  company VARCHAR(30) NOT NULL,
+  country VARCHAR(30) NOT NULL,
+  ageUnder18 INT NOT NULL,
+  ageBetween18And30 INT NOT NULL,
+  ageBetween30And50 INT NOT NULL,
+  ageAfter50 INT NOT NULL,
+  clearance INT NOT NULL
+);
+
+CREATE TABLE vehicles (
+  id VARCHAR(40) PRIMARY KEY,
+  weight INT NOT NULL,
+  wheels INT NOT NULL,
+  maxSpeed INT NOT NULL,
+  price INT NOT NULL,
+  model VARCHAR(30) NOT NULL,
+  company VARCHAR(30) NOT NULL,
+  country VARCHAR(30) NOT NULL,
+  ageUnder18 INT NOT NULL,
+  ageBetween18And30 INT NOT NULL,
+  ageBetween30And50 INT NOT NULL,
+  ageAfter50 INT NOT NULL
+);
+
+CREATE TABLE sportcars (
+  id VARCHAR(40) PRIMARY KEY,
+  weight INT NOT NULL,
+  wheels INT NOT NULL,
+  maxSpeed INT NOT NULL,
+  price INT NOT NULL,
+  model VARCHAR(30) NOT NULL,
+  company VARCHAR(30) NOT NULL,
+  country VARCHAR(30) NOT NULL,
+  ageUnder18 INT NOT NULL,
+  ageBetween18And30 INT NOT NULL,
+  ageBetween30And50 INT NOT NULL,
+  ageAfter50 INT NOT NULL,
+  quarter INT NOT NULL
+);

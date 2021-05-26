@@ -2,12 +2,18 @@ package by.laziuk.cars.impl;
 
 import by.laziuk.cars.annotations.construct;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.Comparator;
 import java.util.Map;
 
+@Entity
+@dev.morphia.annotations.Entity("jeeps")
+@Table(name = "jeeps")
 public class Jeep extends Vehicle implements Comparable<Jeep> {
 
-final static private String CLEARANCE = "clearance";
+final static public String CLEARANCE = "clearance";
 
     private int clearance;
 
@@ -34,14 +40,13 @@ final static private String CLEARANCE = "clearance";
                 int numWheels,
                 int maxSpeed,
                 int cost,
-                String id,
                 int clearance,
-                String type,
                 Statistics statistics) {
-        super(country, company, model, weight, numWheels, maxSpeed, cost, id, type, statistics);
+        super(country, company, model, weight, numWheels, maxSpeed, cost, statistics);
         this.clearance = clearance;
     }
 
+    @Column(name = "clearance")
     public int getClearance() {
         return clearance;
     }
@@ -49,9 +54,6 @@ final static private String CLEARANCE = "clearance";
     public void setClearance(int clearance) {
         this.clearance = clearance;
     }
-
-    @Override
-    public void setType(String type) { this.type = "jeep"; }
 
     public static Comparator<Jeep> getComparatorJeeps(String SortType) {
         return (a, b) -> { if(SortType.equals(CLEARANCE)) {

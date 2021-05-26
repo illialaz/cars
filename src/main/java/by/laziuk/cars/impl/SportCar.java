@@ -2,12 +2,18 @@ package by.laziuk.cars.impl;
 
 import by.laziuk.cars.annotations.construct;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.Comparator;
 import java.util.Map;
 
+@Entity
+@dev.morphia.annotations.Entity("sportcars")
+@Table(name = "sportcars")
 public class SportCar extends Vehicle implements Comparable<SportCar> {
 
-    final private static String QUARTERMILETIME = "quarterMileTime";
+    final public static String QUARTERMILETIME = "quarterMileTime";
 
     private int quarterMileTime;
 
@@ -29,11 +35,9 @@ public class SportCar extends Vehicle implements Comparable<SportCar> {
                     int numWheels,
                     int maxSpeed,
                     int cost,
-                    String id,
                     int quarterMileTime,
-                    String type,
                     Statistics statistics) {
-        super(country, company, model, weight, numWheels, maxSpeed, cost, id, type, statistics);
+        super(country, company, model, weight, numWheels, maxSpeed, cost, statistics);
         this.quarterMileTime = quarterMileTime;
     }
 
@@ -42,9 +46,7 @@ public class SportCar extends Vehicle implements Comparable<SportCar> {
         quarterMileTime = 0;
     }
 
-    @Override
-    public void setType(String type) { this.type = "sportcar"; }
-
+    @Column(name = "quarter")
     public int getQuarterMileTime() {
         return quarterMileTime;
     }
